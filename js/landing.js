@@ -4,7 +4,7 @@ const remove = document.querySelector('.remove');
 const countOver = document.querySelector('.countOver');
 
 // Set Launch Date (ms)
-const launchDate = new Date('Oct 29, 2021 07:30:00').getTime();
+const launchDate = new Date('Oct 29, 2021 08:30:00').getTime();
 
 // Update every second
 const intvl = setInterval(() => {
