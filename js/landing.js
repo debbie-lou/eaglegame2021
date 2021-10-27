@@ -1,9 +1,10 @@
 // JavaScript Document
 const countdown = document.querySelector('.countdown');
 const remove = document.querySelector('.remove');
+const countOver = document.querySelector('.countOver');
 
 // Set Launch Date (ms)
-const launchDate = new Date('Oct 29, 2021 07:30:00').getTime();
+const launchDate = new Date('Oct 19, 2021 07:30:00').getTime();
 
 // Update every second
 const intvl = setInterval(() => {
@@ -35,10 +36,8 @@ const intvl = setInterval(() => {
     clearInterval(intvl);
     // Style and output text
 		remove.innerHTML = '';
-		countdown.style.color = '#F9B500';
-		countdown.style.position = 'absolute';
-		countdown.style.top = '45%';
-		countdown.style.left = '36%';
-		countdown.innerHTML = '<div><h1 class="att">Attention all players<h1><p><strong>The game is about to begin.<br>Players will be eliminated every hour.<br>Please make youre way to the game hall.</strong><br><br><a href="https://mywhccd-my.sharepoint.com/:x:/g/personal/debbielouangeles_whccd_edu/ESutZOzEK6VCniBQ2fTcZhQB7lhyizl7p64lIpkI1t-OWQ?e=AIuCUu" target="_blank"><button>Find your number</button><br></a><a href="https://whccd-edu.zoom.us/j/91443385664?pwd=V2VudG9ROE1GYzJmWkx1dTZncUZrUT09" target="_blank"><button>Enter the Game Hall</button></a></p></div>';
+		countdown.innerHTML ='';
+		countOver.style.opacity = '0.7';
+		countOver.innerHTML = '<div><h1 class="att">Attention all players<h1><p><strong>The game is about to begin.<br>Players will be eliminated every hour.<br>Please make youre way to the game hall.</strong><br><br><a href="https://mywhccd-my.sharepoint.com/:x:/g/personal/debbielouangeles_whccd_edu/ESutZOzEK6VCniBQ2fTcZhQB7lhyizl7p64lIpkI1t-OWQ?e=AIuCUu" target="_blank"><button>Find your number</button><br></a><a href="https://whccd-edu.zoom.us/j/91443385664?pwd=V2VudG9ROE1GYzJmWkx1dTZncUZrUT09" target="_blank"><button>Enter the Game Hall</button></a></p></div>';
   }
 }, 1000);
