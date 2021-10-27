@@ -37,7 +37,7 @@ const intvl = setInterval(() => {
     // Style and output text
 		remove.innerHTML = '';
 		countdown.innerHTML ='';
-		countOver.style.opacity = '1.0';
+		countOver.style.opacity = '1';
 		countOver.innerHTML = '<div><h1 class="att">Attention all players<h1><p><strong>The game is about to begin.<br>Players will be eliminated every hour.<br>Please make youre way to the game hall.</strong><br><br><a href="https://mywhccd-my.sharepoint.com/:x:/g/personal/debbielouangeles_whccd_edu/ESutZOzEK6VCniBQ2fTcZhQB7lhyizl7p64lIpkI1t-OWQ?e=AIuCUu" target="_blank"><button>Find your number</button><br></a><a href="https://whccd-edu.zoom.us/j/91443385664?pwd=V2VudG9ROE1GYzJmWkx1dTZncUZrUT09" target="_blank"><button>Enter the Game Hall</button></a></p></div>';
   }
 }, 1000);
